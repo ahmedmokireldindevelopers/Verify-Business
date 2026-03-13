@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-ink: #071626;
+  --color-brand-royal: #1250d6;
+  --color-brand-gold: #f3b21b;
+  --color-brand-mint: #0fb98a;
+  --color-brand-blue: var(--color-brand-royal);
+  --color-brand-yellow: var(--color-brand-gold);
+  --color-brand-green: var(--color-brand-mint);
+  --color-status-verified: #0fb98a;
+  --color-status-pending: #f3b21b;
+  --color-status-suspicious: #f97316;
+  --color-status-rejected: #ef4444;
+  --font-inter: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  --background: #f4f7fb;
+  --foreground: #071626;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(18, 80, 214, 0.08), transparent 32%),
+    linear-gradient(180deg, #f7faff 0%, #eef3fa 100%);
+  color: var(--foreground);
+  font-family: var(--font-inter);
+  text-rendering: optimizeLegibility;
+}
+
+.text-brand-blue { color: var(--color-brand-blue); }
+.bg-brand-blue { background-color: var(--color-brand-blue); }
+.text-brand-yellow, .text-brand-gold { color: var(--color-brand-gold); }
+.bg-brand-yellow, .bg-brand-gold { background-color: var(--color-brand-gold); }
+.text-brand-green { color: var(--color-brand-green); }
+.bg-brand-green { background-color: var(--color-brand-green); }
+.text-brand-royal { color: var(--color-brand-royal); }
+.bg-brand-royal { background-color: var(--color-brand-royal); }
+.text-brand-ink { color: var(--color-brand-ink); }
+.bg-brand-ink { background-color: var(--color-brand-ink); }
+
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes marquee-rtl {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(50%, 0, 0); }
+}
+
+@keyframes middle-east-marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+@keyframes company-float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -4px, 0); }
+}
+
+.animate-marquee {
+  animation: marquee 24s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-rtl {
+  animation: marquee-rtl 24s linear infinite;
+  will-change: transform;
+}
+
+.middle-east-marquee {
+  animation: middle-east-marquee 18s linear infinite;
+  will-change: transform;
+}
+
+.company-float-a {
+  animation: company-float 4.2s ease-in-out infinite;
+}
+
+.company-float-b {
+  animation: company-float 4.8s ease-in-out infinite;
+}
+
+.company-float-c {
+  animation: company-float 5.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-marquee,
+  .animate-marquee-rtl,
+  .middle-east-marquee,
+  .company-float-a,
+  .company-float-b,
+  .company-float-c {
+    animation: none;
+  }
+}

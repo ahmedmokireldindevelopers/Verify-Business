@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="18" fill="url(#bg)"/>
+  <rect x="6" y="6" width="52" height="52" rx="15" fill="url(#panel)" stroke="rgba(255,255,255,0.12)"/>
+  <path d="M32 15L44 19.8V31.6C44 40.2 39.2 47.4 32 50C24.8 47.4 20 40.2 20 31.6V19.8L32 15Z" fill="url(#shield)"/>
+  <path d="M27.6 31.5L31.2 35.1L37.8 27.8" stroke="white" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="bg" x1="6" y1="4" x2="58" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071626"/>
+      <stop offset="1" stop-color="#103A74"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17345E"/>
+      <stop offset="1" stop-color="#091B31"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="24" y1="18" x2="40" y2="46" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD873"/>
+      <stop offset="1" stop-color="#F3B21B"/>
+    </linearGradient>
+  </defs>
+</svg>
