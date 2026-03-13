@@ -44,3 +44,5 @@ next-env.d.ts
 # local archives / nested copies
 VerifyBusiness.zip
 verify-business/
+vite-app/node_modules/
+vite-app/dist/
