@@ -1,5 +1,7 @@
 # VerifyBusiness
 
+VerifyBusiness is a multilingual company verification and business discovery platform built with Next.js, Supabase, and structured directory search across Crunchbase, LinkedIn exports, and global company sources.
+
 مشروع `VerifyBusiness` مبني باستخدام `Next.js` ويدعم تعدد اللغات.
 
 ## التشغيل المحلي
@@ -35,3 +37,6 @@ npm run build
 
 - دليل Namecheap Shared Hosting:
   [deploy_namecheap.md](c:/Users/Ahmed%20EL%20Sayed/Desktop/VerifyBusiness/deploy_namecheap.md)
+
+- GitHub auto-sync for cPanel/Namecheap:
+  [deploy_github_sync.md](c:/Users/Ahmed%20EL%20Sayed/Desktop/VerifyBusiness/deploy_github_sync.md)

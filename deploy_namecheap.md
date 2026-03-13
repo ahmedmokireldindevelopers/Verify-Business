@@ -130,3 +130,24 @@ Startup file: server.js
 ```
 
 ولا تضع المشروع مباشرة داخل `public_html` إلا إذا كنت تعرف بالضبط كيف ترتب المسارات داخل الاستضافة.
+
+## 11. GitHub Auto Sync
+
+If your Namecheap shared hosting plan includes `SSH`, you can enable direct deployment from GitHub on every push to `main`.
+
+This repository already includes:
+
+- `.github/workflows/deploy-namecheap.yml`
+- `scripts/deploy-from-github.sh`
+- `deploy_github_sync.md`
+
+Recommended flow:
+
+1. Create the Node.js app in cPanel.
+2. Add the required app environment variables in cPanel.
+3. Add the GitHub repository secrets listed in `deploy_github_sync.md`.
+4. Push to `main`.
+
+The workflow will connect to the hosting account over `SSH`, pull the latest commit from GitHub, rebuild the project, and restart the application automatically.
+
+If your hosting plan does not provide `SSH`, use cPanel `Git Version Control` instead. In that mode, cloned GitHub repositories are updated with `Update from Remote`, then deployed with `Deploy HEAD Commit`.
